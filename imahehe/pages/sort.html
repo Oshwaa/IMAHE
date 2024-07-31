@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Panel Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="pages.css">
+    <script src="scripts/functions.js"></script>
+</head>
+<body>
+    <div class="container-fluid h-100 d-flex flex-column">
+        <div class="row header py-2">
+            <div class="col text-right">
+                <a href="/index.html">HOME</a>
+            </div>
+        </div>
+        <div class="row flex-fill main-panel">
+            <div class="col-md-2 source-panel p-3">
+                <h3>Source</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><button class="btn btn-secondary btn-block">Local Disk (C:)</button></li>
+                    <li><button class="btn btn-secondary btn-block">New Volume (D:)</button></li>
+                </ul>
+            </div>
+            <div class="col-md-8 content-panel d-flex align-items-center justify-content-center">
+                <p>Please select a source.</p>
+            </div>
+            <div class="col-md-2 filter-panel p-3">
+                <h3>Filter:</h3>
+            </div>
+        </div>
+        <div class="row footer py-2">
+            <div class="col-md-4">
+                <button class="btn btn-secondary mr-2">Check All</button>
+                <button class="btn btn-secondary">Uncheck All</button>
+            </div>
+            <div class="col-md-8 text-right action-buttons">
+                <button class="btn btn-light mr-2 import">IMPORT</button>
+                <button class="btn btn-light cancel">CANCEL</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
